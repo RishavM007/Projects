@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
+    <title>Project Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <header>
+        <div id="Welcome">Welcome to the Calculator</div>
+        <div id="credit">Made by Rishav Mondal</div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="screen">
+                <input type="text" class="input">
+            </div>
+            <div class="buttons">
+                <button style="background-color: #38c7cb;color: darkblue;" onclick="inputValue=''; Calculator();">C</button>
+                <button style="background-color: antiquewhite;color: #1a65b6;" onclick="inputValue+='1'; Calculator();">1</button>
+                <button style="background-color: antiquewhite;color: #1a65b6;" " onclick="inputValue+='2'; Calculator();">2</button>
+                <button style="background-color: antiquewhite;color: #1a65b6;" " onclick="inputValue+='3'; Calculator();">3</button>
+                <button style="background-color: #38c7cb;color: darkblue;" " onclick="inputValue+='+'; Calculator();">+</button>
+                <button style="background-color: antiquewhite;color: #1a65b6;" " onclick="inputValue+='4'; Calculator();">4</button>
+                <button style="background-color: antiquewhite;color: #1a65b6;" " onclick="inputValue+='5'; Calculator();">5</button>
+                <button style="background-color: antiquewhite;color: #1a65b6;" " onclick="inputValue+='6'; Calculator();">6</button>
+                <button style="background-color: #38c7cb;color: darkblue;" " onclick="inputValue+='*'; Calculator();">*</button>
+                <button style="background-color: antiquewhite;color: #1a65b6;" " onclick="inputValue+='7'; Calculator();">7</button>
+                <button style="background-color: antiquewhite;color: #1a65b6;" " onclick="inputValue+='8'; Calculator();">8</button>
+                <button style="background-color: antiquewhite;color: #1a65b6;" " onclick="inputValue+='9'; Calculator();">9</button>
+                <button style="background-color: #38c7cb;color: darkblue;" " onclick="inputValue+='/'; Calculator();">/</button>
+                <button style="background-color: #38c7cb;color: darkblue;" " onclick="inputValue= eval(inputValue); Calculator();">=</button>
+                <button style="background-color: antiquewhite;color: #1a65b6;" " onclick="inputValue+='0'; Calculator();">0</button>
+                <button style="background-color: #38c7cb;color: darkblue;" " onclick="inputValue+='.'; Calculator();">.</button>
+                <button style="background-color: #38c7cb;color: darkblue;" " onclick="inputValue+='-'; Calculator();">-</button>
+                <button style="background-color: #38c7cb;color: darkblue;" " onclick="inputValue+='('; Calculator();">(</button>
+                <button style="background-color: #38c7cb;color: darkblue;" " onclick="inputValue+=')'; Calculator();">)</button>
+            </div>
+        </div>
+    </main>
+    <script src="calc.js"></script>
+</body>
+
+</html>
