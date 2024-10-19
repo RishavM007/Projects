@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="haze.png" alt="" height="35px" width="35px">
+            <p>CloudCue</p>
+        </div>
+        <div class="nav_disp_temp">
+            <p class="city"></p>
+            <p class="temp"></p>
+        </div>
+        <div class="nav_search">
+            <div class="nav_seach_icon">
+                <button class="search_button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <input type="text" placeholder="Enter City Name" id="input_city">
+            <p>Location</p>
+        </div>
+    </nav>
+    <div class="nav_icons">
+        <ul>
+            <li><a href="#">TODAY</a></li>
+            <li><a href="#">DAILY</a></li>
+            <li><a href="#">HOURLY</a></li>
+            <li><a href="#">RADAR</a></li>
+            <li><a href="#air-quality">AIR QUALITY</a></li>
+        </ul>
+    </div>
+    <div class="Weather_Disp">
+        <div class="weather_card">
+            <div class="weather_card_title">
+                <p>Current Weather</p>
+                <p class="time">Time</p>
+            </div>
+            <div class="weather_card_contents_top">
+                <div class="temp_weather">
+                    <div class="top_reading">
+                        <img src="rain.png" alt="" height="150px" width="150px">
+                        <p>--</p>
+                    </div>
+                    <div class="bottom_weather">
+                        <p>Please Enter City</p>
+                    </div>
+                </div>
+                <div class="realfeel">
+                    <p>Feels Like: --</p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="weather_card_contents_bottom">
+                <div class="left">
+                    <div class="box">
+                        <p class="box_title">Wind Speed</p>
+                        <p class="windspeed">--</p>
+                    </div>
+                    <div class="box">
+                        <p class="box_title">Pressure</p>
+                        <p class="Pressure">--</p>
+                    </div>
+                    <div class="box">
+                        <p class="box_title">Humidity</p>
+                        <p class="Humidity">--</p>
+                    </div>
+                    <div class="box">
+                        <p class="box_title">Indoor Humidity</p>
+                        <p class="indoor">--</p>
+                    </div>
+                    <div class="box">
+                        <p class="box_title">UV index</p>
+                        <p class="UV_index">--</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="box">
+                        <p class="box_title">Wind Gusts</p>
+                        <p class="Gusts">--</p>
+                    </div>
+                    <div class="box">
+                        <p class="box_title">Wind Deg</p>
+                        <p class="Wind_deg">--</p>
+                    </div>
+                    <div class="box">
+                        <p class="box_title">Visibility</p>
+                        <p class="Visibility">--</p>
+                    </div>
+                    <div class="box">
+                        <p class="box_title">Cloud Cover</p>
+                        <p class="cloud">--</p>
+                    </div>
+                    <div class="box">
+                        <p class="box_title">Dew Point</p>
+                        <p class="dew">--</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="weather_news">
+            <div class="new_heading">
+                Today's News
+            </div>
+            <div class="contents">
+    
+            </div>
+        </div>
+    </div>
+    <section id="air-quality">
+        <div class="cur-airq">
+            <div class="ca-title">
+                <p>CURRENT AIR QUALITY</p>
+            </div>
+            <div class="ca-des">
+                <div class="ca-today">
+                    <p>TODAY</p>
+                    <p class="date">10/18</p>
+                </div>
+                <div class="aqi">
+                    <div class="aqi_number">
+                        <h2>AQI</h2>
+                        <h3>100</h3>
+                    </div>
+                    <div class="aqi_description">
+                        <h2 class="aqi_status">Very Unhealthy<i class="fa-solid fa-triangle-exclamation"></i></h2>
+                        <p class="aqi_sat_about">Health effects will be immediately felt by sensitive groups and should
+                            avoid outdoor activity. Healthy individuals are likely to experience difficulty breathing
+                            and throat irritation; consider staying indoors and rescheduling outdoor activities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="airq_scale">
+            <div class="a-title">
+                <p>AIR QUALITY SCALE</p>
+                <p>Over the past hour</p>
+            </div>
+            <div class="airq_body">
+                <div class="a-box">
+                    <div class="box_heading">
+                        <div class="qua">
+                            <div class="exec"></div>
+                            <p>Excellent</p>
+                        </div>
+                        <p>0 - 19</p>
+                    </div>
+                    <p>The air quality is ideal for most individuals; enjoy your normal outdoor activities.</p>
+                </div>
+                <div class="a-box">
+                    <div class="box_heading">
+                        <div class="qua">
+                            <div class="fair"></div>
+                            <p>Fair</p>
+                        </div>
+                        <p>20 - 49</p>
+                    </div>
+                    <p>The air quality is generally acceptable for most individuals. However, sensitive groups may
+                        experience minor to moderate symptoms from long-term exposure.</p>
+                </div>
+                <div class="a-box">
+                    <div class="box_heading">
+                        <div class="qua">
+                            <div class="poor"></div>
+                            <p>Poor</p>
+                        </div>
+                        <p>50 - 99</p>
+                    </div>
+                    <p>The air has reached a high level of pollution and is unhealthy for sensitive groups. Reduce time
+                        spent outside if you are feeling symptoms such as difficulty breathing or throat irritation.</p>
+                </div>
+                <div class="a-box">
+                    <div class="box_heading">
+                        <div class="qua">
+                            <div class="unh"></div>
+                            <p>Unhealthy</p>
+                        </div>
+                        <p>100 - 149</p>
+                    </div>
+                    <p>Health effects can be immediately felt by sensitive groups. Healthy individuals may experience
+                        difficulty breathing and throat irritation with prolonged exposure. Limit outdoor activity.</p>
+                </div>
+                <div class="a-box">
+                    <div class="box_heading">
+                        <div class="qua">
+                            <div class="vunh"></div>
+                            <p>Very Unhealthy</p>
+                        </div>
+                        <p>150 - 249</p>
+                    </div>
+                    <p>Health effects will be immediately felt by sensitive groups and should avoid outdoor activity.
+                        Healthy individuals are likely to experience difficulty breathing and throat irritation;
+                        consider staying indoors and rescheduling outdoor activities.</p>
+                </div>
+                <div class="a-box">
+                    <div class="box_heading">
+                        <div class="qua">
+                            <div class="dan"></div>
+                            <p>Dangerous</p>
+                        </div>
+                        <p>250+</p>
+                    </div>
+                    <p>Any exposure to the air, even for a few minutes, can lead to serious health effects on everybody.
+                        Avoid outdoor activities.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart">
+            <div class="chart_title">
+                <p>24-Hour Air Quality Forecast</p>
+            </div>
+            <canvas id="myChart"></canvas>
+        </div>
+
+        <div class="pol_Pie">
+            <div class="pol_Pie_body">
+                <div class="pie_title">
+                    <p>Concentration of different pollutants</p>
+                </div>
+                <canvas id="pie"></canvas>
+            </div>
+            <div class="pol_info">
+                <div class="pol_info_title">
+                    POLLUTANTS
+                </div>
+                <div class="pol_des">
+                    <div class="pol_description">
+                        <p>CO</p>
+                        <p> This interferes with oxygen delivery to the body's organs. The most common effects of CO
+                            exposure are fatigue, headaches, confusion, and dizziness due to inadequate oxygen delivery
+                            to the brain.</p>
+                    </div>
+                    <div class="pol_description">
+                        <p>NO2</p>
+                        <p>Elevated levels of <a
+                                href="https://air.plumelabs.com/learn/en/no2?utm_source=accuweather&utm_medium=no2&utm_campaign=aq_page#ae16">Nitrogen
+                                Dioxide <i class="fa-solid fa-up-right-from-square"></i> </a> can cause damage to the
+                            human respiratory tract and
+                            increase a person's vulnerability to, and the severity of, respiratory infections and asthma
+                        </p>
+                    </div>
+                    <div class="pol_description">
+                        <p>SO2</p>
+                        <p>Exposure to <a href="https://pubchem.ncbi.nlm.nih.gov/compound/Sulfur-Dioxide">Sulfur Dioxide
+                                <i class="fa-solid fa-up-right-from-square"></i> </a> can lead to throat and eye
+                            irritation and aggravate asthma as well
+                            as chronic bronchitis.</p>
+                    </div>
+                    <div class="pol_description">
+                        <p>PM10</p>
+                        <p><a
+                                href="https://air.plumelabs.com/learn/en/particulate-matter?utm_source=accuweather&utm_medium=pm10&utm_campaign=aq_page#ae16">Particulate
+                                Matter <i class="fa-solid fa-up-right-from-square"></i> </a> are inhalable pollutant
+                            particles with a diameter less than 10 micrometers.
+                        </p>
+                    </div>
+                    <div class="pol_description">
+                        <p>PM25</p>
+                        <p><a
+                                href="https://air.plumelabs.com/learn/en/particulate-matter?utm_source=accuweather&utm_medium=pm25&utm_campaign=aq_page#ae16">Fine
+                                Particulate Matter <i class="fa-solid fa-up-right-from-square"></i> </a> are inhalable
+                            pollutant particles with a diameter less than 2.5
+                            micrometers that can enter the lungs and bloodstream, resulting in serious health issues.
+                        </p>
+                    </div>
+                    <div class="pol_description"></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://kit.fontawesome.com/d836a1d31c.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
